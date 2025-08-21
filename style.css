@@ -1,0 +1,97 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 50px 80px;
+}
+
+.profile img  {
+    float: right;
+    width: 300px;
+    height: 300px;
+    border-radius: 150px;
+    margin: auto;
+    mix-blend-mode: multiply;
+}
+
+.profile {
+    width: auto;
+    height: auto;
+    /* border: 2px solid black; */
+    padding: 70px;
+    background-color: antiquewhite;
+    box-shadow:  3px 5px 5px ;
+}
+
+.profile p {
+    font-size: large;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;     /*allows new line for each section if space run out */
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    
+}
+
+.skills section {
+    align-items: center;
+    text-align: center;
+    margin-bottom: 15px;
+    transition: transform 0.5s ease;
+}
+
+.skills section img {
+    width: 85px;
+    height: 85px;
+    border-radius: 10px;
+    border: 3px solid black;
+    margin: 0 auto;
+    mix-blend-mode: multiply;
+}
+
+.skills section img:hover {
+    transform: scale(1.2);    
+}
+
+.skills p {
+    font-size: 25px;
+}
+
+.skills h1 {
+    text-align: center;
+    background-color: rgb(156, 155, 155);
+}
+
+.projects section {
+    width: auto;
+    height: auto;
+    padding: 20px;
+    border-radius: 10px;
+    border: 3px solid black;
+    margin-bottom: 25px;
+}
+
+.projects section p {
+    font-size: 20px;
+}
+
+.projects section img {
+    float: right;
+    width: 300px;
+    height: auto;
+    margin: 30px ;
+    border: 2px solid black;
+    border-radius: 7px;
+}
+
+.footer {
+    /* text-align: center; */
+    background-color: cadetblue;
+    padding: 15px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: rgb(56, 56, 217);
+}
