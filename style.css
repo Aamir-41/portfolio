@@ -1,28 +1,35 @@
 body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin: 50px 80px;
+    margin: 50px 120px;
 }
 
 .profile img  {
     float: right;
-    width: 300px;
-    height: 300px;
-    border-radius: 150px;
+    max-width: 100%;
+    width: 250px;        /* for adjust in different frame */
+    height: auto;
+    border-radius: 50%;
     margin: auto;
     mix-blend-mode: multiply;
 }
 
 .profile {
     width: auto;
-    height: auto;
-    /* border: 2px solid black; */
-    padding: 70px;
-    background-color: antiquewhite;
-    box-shadow:  3px 5px 5px ;
+    height: 300px;
+    padding: 20px 70px;
 }
 
-.profile p {
-    font-size: large;
+.about-me h1 {
+    margin: 0;
+}
+
+.about-me {
+    width: auto;
+    height: auto;
+    padding: 30px;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.4)
 }
 
 .skills {
@@ -30,63 +37,100 @@ body {
     flex-wrap: wrap;     /*allows new line for each section if space run out */
     justify-content: center;
     align-items: center;
-    gap: 40px;
-    
+    gap: 30px;   
 }
 
 .skills section {
     align-items: center;
     text-align: center;
     margin-bottom: 15px;
-    transition: transform 0.5s ease;
+    transition: transform 0.3s ease;
+}
+
+.skills section :hover {
+   transform: scale(1.05);    
+
 }
 
 .skills section img {
     width: 85px;
     height: 85px;
-    border-radius: 10px;
+    border-radius: 18px;
     border: 3px solid black;
     margin: 0 auto;
     mix-blend-mode: multiply;
-}
-
-.skills section img:hover {
-    transform: scale(1.2);    
 }
 
 .skills p {
     font-size: 25px;
 }
 
-.skills h1 {
-    text-align: center;
-    background-color: rgb(156, 155, 155);
+.projects {
+    display: flex;
+    flex-wrap: wrap;   /*allows wrapping on smaller screens */
+    gap: 30px;      /* spacing between sections*/
+    justify-content: center;
+    align-items: flex-start;
+    padding: 3dvh;
 }
 
 .projects section {
-    width: auto;
+    width: 250px;
     height: auto;
     padding: 20px;
+    margin-top: 0;
+    align-items: center;
     border-radius: 10px;
-    border: 3px solid black;
     margin-bottom: 25px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
 }
 
-.projects section p {
-    font-size: 20px;
+#pr {
+    text-align: center;
+}
+
+.projects section:hover {
+    transform: scale(1.02);
+
 }
 
 .projects section img {
-    float: right;
-    width: 300px;
+    display: block;
+    width: 200px;
     height: auto;
-    margin: 30px ;
-    border: 2px solid black;
+    margin-bottom: 0 auto;
+    border: 1px solid #414141;
     border-radius: 7px;
 }
 
+.projects h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.projects p {
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.projects section a{
+    margin-top: 10px;
+    padding: 8px 15px;
+    align-self: center;
+    align-items: center;
+    background: #0077ff;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: transform 0.3s ease;
+}
+
 .footer {
-    /* text-align: center; */
+    text-align: center;
     background-color: cadetblue;
     padding: 15px;
 }
