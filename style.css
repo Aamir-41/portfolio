@@ -1,12 +1,12 @@
 body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    margin: 50px 120px;
+    margin: 50px auto;
 }
 
 .profile img  {
     float: right;
     max-width: 100%;
-    width: 250px;        /* for adjust in different frame */
+    width: 250px;          /* for adjust in different frame */
     height: auto;
     border-radius: 50%;
     margin: auto;
@@ -17,6 +17,16 @@ body {
     width: auto;
     height: 300px;
     padding: 20px 70px;
+    margin: 20px auto;
+}
+
+.profile h1 {
+    font-size: 35px;
+}
+
+.profile p {
+    font-size: 24px;
+    font-family: candara;
 }
 
 .about-me h1 {
@@ -28,13 +38,18 @@ body {
     height: auto;
     padding: 30px;
     margin-top: 40px;
+    margin: 40px;
     border-radius: 10px;
     box-shadow: 5px 5px 15px rgba(0,0,0,0.4)
 }
 
+.about-me p {
+    font-size: 24px;
+}
+
 .skills {
     display: flex;
-    flex-wrap: wrap;     /*allows new line for each section if space run out */
+    flex-wrap: wrap;         /*allows new line for each section if space run out */
     justify-content: center;
     align-items: center;
     gap: 30px;   
@@ -67,15 +82,15 @@ body {
 
 .projects {
     display: flex;
-    flex-wrap: wrap;   /*allows wrapping on smaller screens */
-    gap: 30px;      /* spacing between sections*/
+    flex-wrap: wrap;     /*allows wrapping on smaller screens */
+    gap: 30px;          /* spacing between sections*/
     justify-content: center;
     align-items: flex-start;
     padding: 3dvh;
 }
 
 .projects section {
-    width: 250px;
+    width: 220px;
     height: auto;
     padding: 20px;
     margin-top: 0;
@@ -97,7 +112,7 @@ body {
 
 .projects section img {
     display: block;
-    width: 200px;
+    width: 220px;
     height: auto;
     margin-bottom: 0 auto;
     border: 1px solid #414141;
@@ -128,6 +143,37 @@ body {
     font-size: 14px;
     transition: transform 0.3s ease;
 }
+
+.mail {
+    margin: 10px auto;
+    padding: 15px 15px;
+    text-align: center;
+    border: 2px solid #414141;
+    border-radius: 10px;
+}
+
+.mail input{
+    margin: 5px 0;
+    width: 40%;
+    font-size: 25px;
+}
+ 
+ button {
+    background-color: #0077ff;
+    border-radius: 5px;
+    padding: 7px 25px;  
+    margin-top: 10px;
+    transition: transform 0.3s ease;
+ }
+
+ button:hover {
+    transform: scale(1.05);
+ }
+
+ .mail a {
+    text-decoration: none;
+    color: white;
+ }
 
 .footer {
     text-align: center;
